@@ -1,6 +1,6 @@
 {
   "name": "is_empty",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "is_empty for the browser and node.js",
   "repository": {
     "type": "git",
@@ -21,8 +21,8 @@
     "mocha": "^2.1.0"
   },
   "dependencies": {
-    "is_string": "nathanfaucett/is_string",
-    "is_array_like": "nathanfaucett/is_array_like",
+    "is_string": "",
+    "is_array_like": "",
     "has": "nathanfaucett/has"
   }
 }
