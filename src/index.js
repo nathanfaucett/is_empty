@@ -3,6 +3,17 @@ var isString = require("is_string"),
     isArrayLike = require("is_array_like");
 
 
+module.exports = isEmpty;
+
+
+function isEmpty(obj) {
+    return (
+        obj == null ? true : (
+            isString(obj) || isArrayLike(obj) ? obj.length === 0 : isObjectEmpty(obj)
+        )
+    );
+}
+
 function isObjectEmpty(object) {
     var localHas = has,
         key;
@@ -15,11 +26,3 @@ function isObjectEmpty(object) {
 
     return true;
 }
-
-module.exports = function isEmpty(obj) {
-    return (
-        obj == null ? true : (
-            isString(obj) || isArrayLike(obj) ? obj.length === 0 : isObjectEmpty(obj)
-        )
-    );
-};
