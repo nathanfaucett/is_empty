@@ -1,6 +1,7 @@
 var isString = require("is_string"),
     has = require("has"),
-    isArrayLike = require("is_array_like");
+    isArrayLike = require("is_array_like"),
+    isNullOrUndefined = require("is_null_or_undefined");
 
 
 module.exports = isEmpty;
@@ -8,7 +9,7 @@ module.exports = isEmpty;
 
 function isEmpty(obj) {
     return (
-        obj == null ? true : (
+        isNullOrUndefined(obj) ? true : (
             isString(obj) || isArrayLike(obj) ? obj.length === 0 : isObjectEmpty(obj)
         )
     );

@@ -21,8 +21,9 @@
     "mocha": "^2.1.0"
   },
   "dependencies": {
-    "is_string": "git://github.com/nathanfaucett/is_string",
+    "has": "git://github.com/nathanfaucett/has",
     "is_array_like": "git://github.com/nathanfaucett/is_array_like",
-    "has": "git://github.com/nathanfaucett/has"
+    "is_null_or_undefined": "git://github.com/nathanfaucett/is_null_or_undefined",
+    "is_string": "git://github.com/nathanfaucett/is_string"
   }
 }
