@@ -6,6 +6,12 @@
     "type": "git",
     "url": "https://github.com/nathanfaucett/is_empty.git"
   },
+  "scripts": {
+    "test": "npm run node-test",
+    "node-test": "node ./test/index.js | ./node_modules/.bin/tap-spec",
+    "browser-test": "zuul -- ./test/index.js",
+    "browser-test-local": "zuul --local 8080 ./test/index.js"
+  },
   "main": "src/index.js",
   "keywords": [
     "is_empty",
@@ -18,12 +24,14 @@
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-jsbeautifier": "^0.2.7",
-    "mocha": "^2.1.0"
+    "tape": "^4.0.0",
+    "tap-spec": "^4.0.0",
+    "zuul": "^3.0.0"
   },
   "dependencies": {
-    "has": "git://github.com/nathanfaucett/has",
-    "is_array_like": "git://github.com/nathanfaucett/is_array_like",
-    "is_null_or_undefined": "git://github.com/nathanfaucett/is_null_or_undefined",
-    "is_string": "git://github.com/nathanfaucett/is_string"
+    "has": "git://github.com/nathanfaucett/has.git",
+    "is_array_like": "git://github.com/nathanfaucett/is_array_like.git",
+    "is_null_or_undefined": "git://github.com/nathanfaucett/is_null_or_undefined.git",
+    "is_string": "git://github.com/nathanfaucett/is_string.git"
   }
 }

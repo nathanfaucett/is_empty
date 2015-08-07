@@ -7,10 +7,10 @@ var isString = require("is_string"),
 module.exports = isEmpty;
 
 
-function isEmpty(obj) {
+function isEmpty(value) {
     return (
-        isNullOrUndefined(obj) ? true : (
-            isString(obj) || isArrayLike(obj) ? obj.length === 0 : isObjectEmpty(obj)
+        isNullOrUndefined(value) ? true : (
+            isString(value) || isArrayLike(value) ? value.length === 0 : isObjectEmpty(value)
         )
     );
 }
