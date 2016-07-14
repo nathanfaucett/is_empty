@@ -1,7 +1,7 @@
-var isString = require("is_string"),
-    has = require("has"),
-    isArrayLike = require("is_array_like"),
-    isNullOrUndefined = require("is_null_or_undefined");
+var isString = require("@nathanfaucett/is_string"),
+    has = require("@nathanfaucett/has"),
+    isArrayLike = require("@nathanfaucett/is_array_like"),
+    isNullOrUndefined = require("@nathanfaucett/is_null_or_undefined");
 
 
 module.exports = isEmpty;

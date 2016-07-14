@@ -1,4 +1,15 @@
 isEmpty
 =======
 
-isEmpty for the browser and node.js
+checks if value is Empty
+
+```javascript
+var isEmpty = require("@nathanfaucett/is_empty");
+
+
+isEmpty([]); // true
+isEmpty({}); // true
+isEmpty({
+    key: "value"
+}); // false
+```
